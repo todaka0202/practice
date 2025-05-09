@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.text-scroll {
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    overflow: hidden;
+    
+}
+
+.text {
+    font-size: 80px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    &:hover {
+        transition: 0.2s;
+        translate: y -4rem;
+    }
+}
